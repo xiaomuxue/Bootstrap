@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 以最高级别的可用模式显示内容 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- 移动端的视口与我们的页面是同一个尺寸 -->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BootStrap组件的简单使用</title>
+<!-- 首先，引入css -->
+<link rel="stylesheet" href="../9月12号/bootstrap-3.3.0-dist/dist/css/bootstrap.css" />
+
+<title>小练习</title>
+<style>
+   #denglu{
+       width:350px;
+	   margin-left:300px;
+	   margin-top:100px;
+   }
+   #DL{
+      margin:-60px 0 0 250px;
+   }
+   #login{
+      width:400px;
+   }
+</style>
+</head>
+
+<body>
+  
+   <div class="panel panel-primary" id="denglu">
+         <div class="panel-heading">
+             <h4>Login</h4>
+          </div>
+          <div class="panel-body">
+              <p>用户名：<input type="text"/></p><br/>
+              <p class="text-warning">用户名不能为空！</p><br/>
+              <p>密码：<input type="password"/></p><br/>
+              <p class="text-info">忘记密码？</p>
+              <p class="btn btn-primary" id="DL">登录</p>
+          </div>
+   </div>   <br/><br/><br/><br/><br/><br/>
+   
+   
+   
+   <div class="container">
+        <br/>
+        <div class="panel panel-primary" id="login">
+             <div class="panel-heading">
+                 <h4>Login</h4>
+              </div>
+              <div class="panel-body">
+                 <!-- 在同一个form里面  -->
+                 <div>
+                      <label>用户名：</label><input type="text" class="form-control"/>
+                      <div class="alert alert-danger" style="height:30px;line-height:2px">用户名不能为空！</div>
+                      <label>密码：</label><input type="password" class="form-control"/><br/><br/>
+                      <p class="text-info">忘记密码？</p>
+                      <p class="btn btn-primary" id="DL">登录</p>
+                  </div>
+              </div>
+       </div>
+   </div>
+   
+   
+   
+   <!-- bootstrap是基于jquery的，所以要先引入jquery -->
+   <script type="text/javascript" src="jquery-1.9.1.js"></script>
+   <script type="text/javascript" src="../9月12号/bootstrap-3.3.0-dist/dist/js/bootstrap.js"></script>
+   
+   
+</body>
+</html>
