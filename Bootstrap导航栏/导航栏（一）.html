@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 以最高级别的可用模式显示内容 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- 移动端的视口与我们的页面是同一个尺寸 -->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>导航栏（锚记）</title>
+<!-- 首先，引入css -->
+<link rel="stylesheet" href="../9月12号/bootstrap-3.3.0-dist/dist/css/bootstrap.css" />
+<style>
+   body{
+      height:2000px;
+	  /* 必须相对布局 */
+	  position:relative;
+   }
+   .test{
+      margin-bottom:500px;
+	  padding-top:50px;
+   }
+</style>
+
+</head>
+      <!-- 首先，添加滚动条监听   监听影响的是哪一个 -->
+<body data-spy="scroll" data-target="#myNav" data-offset="100">
+  <nav class="navbar navbar-default navbar-fixed-top" id="myNav">
+   <div class="container">
+      <div class="navbar-header">
+        <!-- 定义logo,class:navbar-brand -->
+        <a href="" class="navbar-brand">Logo</a>
+      </div>
+      <div id="myCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#a">one</a></li>
+          <li><a href="#b">two</a></li>
+          <li><a href="#c">three</a></li>
+        </ul> 
+       </div>                    
+    </div>
+  </nav>
+  <div id="a" class="test">aaaaaaaaaaaaaaaa</div>
+  <div id="b" class="test">bbbbbbbbbbbbbbbb</div>
+  <div id="c" class="test">cccccccccccccccc</div>
+
+  <!-- bootstrap是基于jquery的，所以要先引入jquery -->
+   <script type="text/javascript" src="jquery-1.9.1.js"></script>
+   <script type="text/javascript" src="../9月12号/bootstrap-3.3.0-dist/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
